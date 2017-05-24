@@ -12,6 +12,10 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('GPPawegoBundle:Default:index.html.twig', array("title"=>"PAWEGO Front site"));
+        return $this->render('GPPawegoBundle:Default:index.html.twig', array("title"=>"Welcome at PaweGo.com"));
+    }
+    public function frontAction()
+    {
+        return $this->render('GPPawegoBundle:Default:front.html.twig');
     }
 }
